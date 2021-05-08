@@ -1,16 +1,18 @@
 {
-  "name": "varify",
-  "version": "1.0.0",
+  "name": "@alexmchan/babel-plugin-cssvarify",
+  "version": "0.0.1",
   "description": "",
   "files": [
     "dist/*"
   ],
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "repository": "https://github.com/alexanderchan/babel-plugin-cssvarify",
+  "author": "Alex Chan <alex@alexmchan.com>",
   "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.1",
