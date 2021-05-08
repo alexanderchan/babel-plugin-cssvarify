@@ -10,7 +10,7 @@
   "module": "dist/alexmchan-babel-plugin-cssvarify.esm.js",
   "scripts": {
     "build": "preconstruct build",
-    "postinstall": "preconstruct dev",
+    "dev": "preconstruct dev",
     "prepublish": "npm run build",
     "test": "jest"
   },
