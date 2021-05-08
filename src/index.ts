@@ -16,11 +16,15 @@ function addVar(cssPropertyValue) {
 export function traverseVars({ t }) {
   return {
     StringLiteral(path) {
-      path.node.value = addVar(path.node.value)
+      if (path.parent?.key !== path.node) {
+        path.node.value = addVar(path.node.value)
+      }
     },
     TemplateElement(path) {
-      path.node.value.raw = addVar(path.node.value.raw)
-      path.node.value.cooked = addVar(path.node.value.cooked)
+      if (path.parent?.key !== path.node) {
+        path.node.value.raw = addVar(path.node.value.raw)
+        path.node.value.cooked = addVar(path.node.value.cooked)
+      }
     },
   }
 }
