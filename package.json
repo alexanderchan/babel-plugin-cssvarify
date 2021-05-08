@@ -6,8 +6,11 @@
     "dist/*"
   ],
   "private": false,
-  "main": "index.js",
+  "main": "dist/alexmchan-babel-plugin-cssvarify.cjs.js",
+  "module": "dist/alexmchan-babel-plugin-cssvarify.esm.js",
   "scripts": {
+    "build": "preconstruct build",
+    "postinstall": "preconstruct dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +18,8 @@
   "author": "Alex Chan <alex@alexmchan.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-typescript": "^7.13.0",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
     "eslint-config-prettier": "^8.3.0",
