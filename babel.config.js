@@ -3,6 +3,7 @@ module.exports = function (api) {
 
   const presets = [
     ['@babel/preset-env', { targets: { node: 'current' } }],
+    ['@babel/preset-react', { runtime: 'automatic' }],
     '@babel/preset-typescript',
   ]
   const plugins = []
