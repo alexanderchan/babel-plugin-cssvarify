@@ -11,7 +11,7 @@
   "scripts": {
     "build": "preconstruct build",
     "postinstall": "preconstruct dev",
-    "publish": "npm build && npm publish",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "keywords": [],
